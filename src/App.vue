@@ -6,7 +6,10 @@
 
 
 <style lang="scss">
-@import './src/assets/utilities.scss';
+@import './src/assets/vendor/reset';
+@import './src/assets/vendor/normalize';
+@import './src/assets/vendor/archetype';
+@import './src/assets/utilities';
 
 :root {
   --brand-color: #FFBE00;
@@ -21,13 +24,8 @@
 html, body {
   height: 100vh;
   width: 100vw;
-  margin: 0;
-  padding: 0;
 }
 body {
-  font-family: 'Roboto Mono', monospace;
-  font-size: 16px;
-  line-height: 1.25rem;
   color: map-get($colors, 'light');
 }
 #app {

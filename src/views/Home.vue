@@ -1,26 +1,16 @@
-<template>
-  <div class="home">
-    <Card>
-      <template v-slot:top>
-        Hello, world
-      </template>
-      <template v-slot:middle>
-        <div>
+<template lang="pug">
+  .home
+    Card
+      template(v-slot:top)
+        h1.text-primary Hello, world.
+      template(v-slot:middle)
+        p.
           My name is Lisa.
-        </div>
-        <div>
           A passion for learning has guided me to the technology worlds of
           development, design, marketing. So, let's look at what you're working
           on, I want to know more.
-        </div>
-      </template>
-      <template v-slot:bottom>
-        <div>
-          We’re going to love working together.
-        </div>
-      </template>
-    </Card>
-  </div>
+      template(v-slot:bottom)
+        h2.text-primary We're going to love working together.
 </template>
 
 <script>

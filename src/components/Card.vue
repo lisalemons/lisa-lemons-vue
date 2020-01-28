@@ -1,6 +1,6 @@
 <template lang="pug">
   .card.bg-dark.w-100.h-100
-    .card__wrapper.h-100.flex.flex--col.justify-content--space-between.px-3.py-5.bg-darker.bb-2.b-primary
+    .card__wrapper.h-100.flex.flex--col.justify-content--space-between.px-5.bg-darker.bb-2.b-primary
       .card__top
         slot(name='top')
       .card__middle
