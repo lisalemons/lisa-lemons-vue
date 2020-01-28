@@ -1,6 +1,6 @@
 <template lang="pug">
-  .card
-    .card__wrapper
+  .card.bg-dark.w-100.h-100
+    .card__wrapper.h-100.flex.flex--col.justify-content--space-between.px-3.py-5.bg-darker.bb-2.b-primary
       .card__top
         slot(name='top')
       .card__middle
@@ -14,20 +14,6 @@ export default {};
 </script>
 
 <style lang="scss" scoped>
-.card {
-  background: var(--base-gray);
-  height: 100%;
-  width: 100%;
-
-  &__wrapper {
-    background: var(--darker-gray);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100%;
-    border-bottom: var(--border-width) var(--brand-color) solid;
-  }
-}
 @media only screen and (min-width: 600px) {
   .card__wrapper {
     margin: 0 10rem;

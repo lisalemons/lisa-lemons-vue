@@ -6,6 +6,8 @@
 
 
 <style lang="scss">
+@import './src/assets/utilities.scss';
+
 :root {
   --brand-color: #FFBE00;
   --base-gray: #333;
@@ -26,7 +28,7 @@ body {
   font-family: 'Roboto Mono', monospace;
   font-size: 16px;
   line-height: 1.25rem;
-  color: var(--off-white);
+  color: map-get($colors, 'light');
 }
 #app {
   height: 100%;
