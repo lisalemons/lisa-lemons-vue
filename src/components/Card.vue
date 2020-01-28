@@ -1,17 +1,36 @@
 <template lang="pug">
-  .container
-    .container__wrapper
-      .container__content
-        h1 Hello, world.
-        h2 My name is Lisa.
-        p A passion for learning has guided me to the technology worlds of development, design, marketing. So, let's look at what you're working on, I want to know more.
-        p.text-brand We’re going to love working together.
-        .bottom
-          .next-button Let's go >
+  .card
+    .card__wrapper
+      .card__top
+        slot(name='top')
+      .card__middle
+        slot(name='middle')
+      .card__bottom
+        slot(name='bottom')
 </template>
 
 <script>
 export default {};
 </script>
 
-<style></style>
+<style lang="scss" scoped>
+.card {
+  background: var(--base-gray);
+  height: 100%;
+  width: 100%;
+
+  &__wrapper {
+    background: var(--darker-gray);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    border-bottom: var(--border-width) var(--brand-color) solid;
+  }
+}
+@media only screen and (min-width: 600px) {
+  .card__wrapper {
+    margin: 0 10rem;
+  }
+}
+</style>
